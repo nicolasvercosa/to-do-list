@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(42, 104, 104);
+
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(27, 70, 70);
+}
+
+.box {
+    background-color: white;
+    margin: auto;   
+    margin-top: 20px;
+    width: 450px;
+    padding: 20px;
+    border: none;
+    border-radius: 6px;
+} 
+
+.input-area {
+    display: flex;
+    flex-direction: row; 
+}
+
+.item-input {
+    margin-top: 0;
+    width: 350px;
+    height: 38px;
+    border: 1px solid rgb(0, 128, 128);
+    font-size: larger;
+    
+}
+
+#addBtn {
+    width: 48px;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    color: rgb(38, 135, 214);
+    font-size: 25pt;
+    font-weight: 900;  
+    cursor: pointer;   
+}
+ 
+ul {
+    margin-top: 20px;
+    list-style: none;
+}
+
+li {
+    font-size: 15pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid rgba(29, 69, 75, 0.651);
+    border-radius: 3px;
+    cursor: pointer;
+    color: rgb(2, 24, 43);
+}
+
+span {
+    display: none;
+}
+
+li:hover > span {
+    display: block;
+    color: green;
+    content: 'ok';
+}
+
+li:hover {
+    background-color: rgba(40, 168, 125, 0.425);
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type=checkbox]{
+    cursor: pointer;
+    transform: scale(1.5);
+    margin-right: 5px; 
+}
+
+.checked{
+    color: rgb(91, 114, 100);
+    text-decoration: line-through;
+}
+
+.checked::after {  
+   /* content: '\2713';*/
+   
+    font-size: 20px;
+    font-weight: 900; 
+}
+
+.checked::after{
+    color: green;
+    text-decoration: none;
+}
+
+#clearBtn {
+    width: 48px;
+    height: 40px;
+    
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    color: rgb(255, 42, 42);
+    font-size: 17pt;
+    font-weight: 900;  
+    cursor: pointer; 
+}
+
+.close {
+    display: none;
+}
+
+
